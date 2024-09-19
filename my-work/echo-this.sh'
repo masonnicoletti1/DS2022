@@ -1,8 +1,0 @@
-#!/bin/bash
-
-#Echo out something
-
-VAR1="Coffee"
-
-echo $VAR1
-
