@@ -12,4 +12,3 @@ aws s3 cp $IMAGEFILE s3://$BUCKET/
 
 #Create expiring url of image
 aws s3 presign --expires-in 604800 s3://$BUCKET/$IMAGEFILE
-

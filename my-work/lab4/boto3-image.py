@@ -18,7 +18,8 @@ s3 = boto3.client('s3', region_name='us-east-1')
 resp = s3.put_object(
     Body = image_name, 
     Bucket = bucket,
-    Key = image_name
+    Key = image_name,
+    ACL = 'public-read'
 )
 
 #Presign file with expiration time
