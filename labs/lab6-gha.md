@@ -135,6 +135,8 @@ The better method for creating container images is to automate it using a `Docke
 
 3. **Edit the** `.github/workflows/build.yaml` **file**
 
+    **RENAME** the file to end in `.yaml` (instead of `.zaml` which has turned off the workflow for now).
+
     Just below the `on:` line, add `workflow_dispatch:` (with the colon) and indent it to match the `push` line. It should look like this when complete (including indentations)
 
     ```
