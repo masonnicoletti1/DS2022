@@ -5,7 +5,7 @@ import os
 
 MONGOPASS = os.getenv('MONGOPASS')
 uri = "mongodb+srv://cluster0.sssb7.mongodb.net/"
-client = MongoClient(uri, username='DS2022', password=MONGOPASS, connectTimeoutMS=200, retryWrites=True)
+client = MongoClient(uri, username='masonnicoletti', password=MONGOPASS, connectTimeoutMS=200, retryWrites=True)
 
 # Access database and create new collection
 thisdb = client.cxx6sw
