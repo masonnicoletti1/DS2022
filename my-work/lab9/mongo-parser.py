@@ -3,7 +3,7 @@
 from pymongo import MongoClient, errors
 import os
 
-MONGOPASS = os.genenv('MONGOPASS')
+MONGOPASS = os.getenv('MONGOPASS')
 uri = "mongodb+srv://cluster0.sssb7.mongodb.net/"
 client = MongoClient(uri, username='DS2022', password=MONGOPASS, connectTimeoutMS=200, retryWrites=True)
 
