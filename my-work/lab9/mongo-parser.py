@@ -83,4 +83,6 @@ fall2024.insert_many([class_one, class_two, class_three, class_four, class_five]
 # Display Documents
 lookup_query = {"details.day": "Monday"}
 find = fall2024.find(lookup_query)
-print("I have these classes on Monday:" + find)
+print("I have these classes on Monday:")
+for doc in find:
+  print(doc)
