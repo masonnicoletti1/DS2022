@@ -78,7 +78,13 @@ class_five = {
 }
 
 # Insert Records
-fall2024.insert_many([class_one, class_two, class_three, class_four, class_five])
+class_documents = [class_one, class_two, class_three, class_four, class_five]
+for doc in class_documents:
+  fall2024.update_one(
+    {"name": doc["name"]},
+    {$set : doc},
+    upsert = True
+  )
 
 # Display Documents
 lookup_query = {"details.day": "Monday"}
