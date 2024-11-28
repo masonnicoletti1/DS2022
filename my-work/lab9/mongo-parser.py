@@ -1,6 +1,4 @@
 from pymongo import MongoClient, errors
-from bson.json_util import dumps
-from db import *
 import os
 
 MONGOPASS = os.genenv('MONGOPASS')
