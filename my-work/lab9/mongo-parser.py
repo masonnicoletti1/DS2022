@@ -7,7 +7,7 @@ MONGOPASS = os.getenv('MONGOPASS')
 uri = "mongodb+srv://cluster0.sssb7.mongodb.net/"
 client = MongoClient(uri, username='DS2022', password=MONGOPASS, connectTimeoutMS=200, retryWrites=True)
 
-# Create new collection
+# Access database and create new collection
 thisdb = client.cxx6sw
 fall2024 = thisdb.fall2024
 count = fall2024.count_documents({})
