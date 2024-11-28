@@ -82,7 +82,7 @@ class_documents = [class_one, class_two, class_three, class_four, class_five]
 for doc in class_documents:
   fall2024.update_one(
     {"name": doc["name"]},
-    {$set : doc},
+    {"$set" : doc},
     upsert = True
   )
 
